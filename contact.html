@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Christmas Store</title>
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <img src="background.webp" alt="background" id="background">
+
+  <header class="text-center font-medium leading-tight mt-0 mb-2">
+    <img src="header.webp" alt="Santa Claus" class="w-full h-12">
+    <h1 class="text-5xl">Welcome to Our <span class="text-red-600 font-medium">Christmas</span> Store</h1>
+    <p class="text-2xl">This page should be tried in safari, chrome or Mozila.</p>
+  </header>
+
+  <nav class="flex w-screen font-medium text-xl">
+    <ul class="flex flex-1 justify-center">
+      <li class="p-5 m-4 bg-sky-400 hover:bg-sky-500 hover:bg-sky-500 rounded-3xl hover:scale-125 transition-all">
+        <a href="index.html" class="hover:underline">Index</a>
+      </li>
+      <li class="p-5 m-4 bg-sky-400 hover:bg-sky-500 rounded-3xl hover:scale-125 transition-all">
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </li>
+      <li class="p-5 m-4 bg-sky-400 hover:bg-sky-500 rounded-3xl hover:scale-125 transition-all">
+        <a href="deal.html" class="hover:underline">Today&apos;s Deal</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article class="text-center flex flex-col justify-center">
+    <section>
+      <h1 class="font-medium text-xl mb-2">Contact Us</h1>
+      <form action="index.html" class="contact-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" name="phone" id="phone"><br>
+        <label for="message">Your message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Submit" onclick="alert('Success!')"
+               class="bg-green-500 p-4 m-2 rounded-2xl font-medium text-4xl hover:bg-green-600
+                      hover:scale-125 transition-all hover:underline"><br>
+      </form>
+    </section>
+  </article>
+
+  <asider class="text-center">
+    <p> This is the aside part of the web page. </p>
+  </aside>
+
+  <footer class="text-center font-medium">&copy;2023 Dylan McDougall</footer>
+</body>
+
+</html>

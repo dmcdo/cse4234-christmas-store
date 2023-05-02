@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Christmas Tree",
+        "image": "tree.webp",
+        "fullprice": 200,
+        "discount": 0.25
+    },
+    {
+        "name": "Christmas Lights",
+        "image": "lights.webp",
+        "fullprice": 10,
+        "discount": 0.50
+    },
+    {
+        "name": "Santa Hat",
+        "image": "hat.jpg",
+        "fullprice": 8,
+        "discount": 0.125
+    },
+    {
+        "name": "Santa Beard",
+        "image": "beard.jpg",
+        "fullprice": 30,
+        "discount": 0.33333
+    }
+]

@@ -1,7 +1,18 @@
+import SignIn from "./SignIn";
+import SignOut from "./SignOut";
+
 function Header() {
+    const name = localStorage.getItem("name");
+
+    let greeting;
+    if (name === null)
+        greeting = <h1 class="text-5xl">Welcome to Our <span class="text-red-600 font-medium">Christmas</span> Store</h1>;
+    else
+        greeting = <h1 class="text-5xl">Welcome, <span class="text-red-600 font-medium">{name}</span></h1>
+
     return <header className="text-center">
         <img src="header.webp" alt="Santa Claus" class="w-full h-12" />
-        <h1 class="text-5xl">Welcome to Our <span class="text-red-600 font-medium">Christmas</span> Store</h1>
+        {greeting}
         <p class="text-2xl">This page should be tried in safari, chrome or Mozila.</p>
 
         <nav class="flex w-screen font-medium text-xl">
@@ -17,6 +28,7 @@ function Header() {
                 </li>
             </ul>
         </nav>
+        {name === null ? <SignIn /> : <SignOut />}
     </header>
 }
 
